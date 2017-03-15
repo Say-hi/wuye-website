@@ -1,0 +1,30 @@
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+/*清除浮动*/
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfix{zoom:1} 
+/*红色字体*/
+.redcolor {
+    color: #f00;
+}
+/*三角图标*/
+.triangle {
+    position: relative;
+}
+.triangle::after {
+    position: absolute;
+    top: 20%;
+    right: 0.28rem;
+    content: '';
+    width: 0.213333rem;
+    height: 0.213333rem;
+    border-width: 0.026667rem 0.026667rem 0 0;
+    border-color: #333;
+    border-style: solid;
+    transform: rotateZ(45deg);
+}

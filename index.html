@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+    <title>首页</title>
+    <!--rem布局计算-->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="divport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","divport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+    <!--初始化css-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="./css/swiper/swiper.min.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 首页样式 -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- home页 -->
+    <div class="wrap home hidden">
+         <!--轮播图-->
+        <div class="swiper-container lunbo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 告示 -->
+        <div class="billbard">
+            <img class="icon" src="./images/play.png" alt="">
+            <div class="swiper-container b-lunbo">
+                <div class="sw-billbard">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+            </div>
+        </div>
+        <!--申请人数-->
+        <div class="people">
+            <div class="p-apply">
+              <span class="p-apply-today">今日申请人数<span class="redcolor">2805</span>人</span>
+              <span class="p-apply-success">累积借款成功人数<span class="redcolor">122805</span>人</span>
+            </div>
+            <img class="p-image" src="./images/index-1.png" alt="">
+        </div>
+      <!-- 首页导航 -->
+        <ul class="nav-ul">
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">贷款大全</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">贷款大全</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">贷款大全</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">贷款大全</span>
+                </a>
+            </li>
+        </ul>
+        <!-- hot -->
+        <div class="hot">
+            <!-- hot-top -->
+            <div class="hot-top">
+                <img class="hot-icon" src="./images/index-hot.png">
+                <span class="hot-title">热门贷款平台</span>
+            </div>
+            <!-- hot-list -->
+            <div class="hot-list">
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 借款页面 -->
+    <div class="wrap loan">
+        <!-- 轮播 -->
+        <div class="swiper-container lunbo">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 贷款页导航 -->
+        <ul class="nav-ul">
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">五叶金融A</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">五叶金融B</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">五叶金融C</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">五叶金融D</span>
+                </a>
+            </li>
+            <li>
+                <a class="nav-l-a" href="">
+                    <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                    <span class="nav-l-name">五叶金融E</span>
+                </a>
+            </li>
+        </ul>
+            <!-- 贷款页hot1 -->
+         <div class="hot">
+            <!-- hot-list -->
+            <div class="hot-list clearfix">
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- choose-nav -->
+        <div class="choose">
+            <div class="choose-tab">
+                <ul class="c-t-ul">
+                    <li class="c-t-li triangle active">综合排序</li>
+                    <li class="c-t-li triangle">排序筛选</li>
+                    <li class="c-t-li triangle">贷款类型</li>
+                    <li class="c-t-li triangle">金额选择</li>
+                </ul>
+            </div>
+        </div>
+        <!-- choose-list -->
+        <div class="hot-list clearfix choose-list">
+            <a href="" class="hot-l-a">
+                <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                <div class="hot-l-a-c">
+                    <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                    <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                    <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                    <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                </div>
+            </a>
+            <a href="" class="hot-l-a">
+                <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                <div class="hot-l-a-c">
+                    <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                    <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                    <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                    <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                </div>
+            </a>
+            <a href="" class="hot-l-a">
+                <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                <div class="hot-l-a-c">
+                    <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                    <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                    <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                    <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                </div>
+            </a>
+            <a href="" class="hot-l-a">
+                <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                <div class="hot-l-a-c">
+                    <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                    <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                    <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                    <img class="hot-l-t-start" src="./images/index-star.png" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- tab栏 -->
+    <div class="tab">
+        <div id='0' class="tab-a redcolor" href="">
+            <i class="wuyefont icon-shouyeshouye"></i>
+            <span class="tab-text">首页</span>
+        </div>
+         <div id='1' class="tab-a" href="">
+            <i class="wuyefont icon-jiekuan"></i>
+            <span class="tab-text">借款机构</span>
+        </div>
+         <div id='2' class="tab-a" href="">
+            <i class="wuyefont icon-jindanluntan"></i>
+            <span class="tab-text">贷款论坛</span>
+        </div>
+         <div id='3' class="tab-a" href="">
+            <i class="wuyefont icon-geren"></i>
+            <span class="tab-text">个人中心</span>
+        </div>
+    </div>
+</body>
+</html>
+<!--引入jquery-->
+<script src="./js/lib/jquery-3.1.0.min.js"></script>
+<!-- 引入模板js -->
+<script src="./js/lib/template.js"></script>
+<!--swiper-->
+<script src="./js/lib/swiper/swiper.jquery.min.js"></script>
+<!--swiper js-->
+<script>
+  var lunbo = new Swiper ('.lunbo', {
+    wrapperClass: 'swiper-wrapper',
+    autoplay: 5000,
+    autoplayDisableOnInteraction : false,
+    loop: true,
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+  })
+  var billbard = new Swiper ('.b-lunbo', {
+    wrapperClass: 'sw-billbard',
+    autoplay: 1000,
+    autoplayDisableOnInteraction : false,
+    loop: true,
+    onlyExternal : true,
+    direction: 'vertical',
+  })
+</script>
+<!-- 业务逻辑js -->
+<script src="./js/index.js"></script>
