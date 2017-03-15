@@ -28,3 +28,16 @@ a {
     border-style: solid;
     transform: rotateZ(45deg);
 }
+/*红色竖框*/
+.red-slide {
+    position: relative;
+}
+.red-slide::before {
+    position: absolute;
+    top: 20%;
+    left: 0.28rem;
+    content: '';
+    width: 0.08rem;
+    height: 0.427rem;
+    background-color: #ee2911;
+}

@@ -21,18 +21,18 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <!--轮播图-->
+    <div class="swiper-container lunbo">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
     <!-- home页 -->
     <div class="wrap home hidden">
-         <!--轮播图-->
-        <div class="swiper-container lunbo">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-        </div>
         <!-- 告示 -->
         <div class="billbard">
             <img class="icon" src="./images/play.png" alt="">
@@ -52,7 +52,7 @@
             </div>
             <img class="p-image" src="./images/index-1.png" alt="">
         </div>
-      <!-- 首页导航 -->
+        <!-- 首页导航 -->
         <ul class="nav-ul">
             <li>
                 <a class="nav-l-a" href="">
@@ -128,17 +128,7 @@
         </div>
     </div>
     <!-- 借款页面 -->
-    <div class="wrap loan">
-        <!-- 轮播 -->
-        <div class="swiper-container lunbo">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination"></div>
-        </div>
+    <div class="wrap loan hidden">
         <!-- 贷款页导航 -->
         <ul class="nav-ul">
             <li>
@@ -245,6 +235,182 @@
                     <img class="hot-l-t-start" src="./images/index-star.png" alt="">
                 </div>
             </a>
+        </div>
+    </div>
+    <!-- 论坛页面 -->
+    <div class="wrap bbs ">
+        <!-- tab切换 -->
+        <div class="bbs-tab">
+            <span id='4' class="bbs-t active">精选</span>
+            <span id='5' class="bbs-t">版区</span>
+        </div>
+        <!-- 精选 -->
+        <div class="article hidden bbs-one">
+            <div class="article-title red-slide">精选帖子</div>
+            <ul class="article-ul">
+                <li class="article-li">
+                    <a href="" class="article-a">
+                        <div class="a-a-top">
+                            <img class="a-a-image" src="./images/bbs-1.png" alt="">
+                            <span class="a-a-title">马云首创马云首创马云首创马云首创马云首创马云首创</span>
+                            <span class="a-a-name">人马科技</span>
+                        </div>
+                        <div class="a-a-center">马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创</div>
+                        <div class="a-a-bottom">
+                            <span class="wuyefont icon-shijian"><span class="time">2017-03-02</span></span>
+                            <span class="wuyefont icon-icons64x6416"><span class="watch">1234</span></span>
+                            <span class="wuyefont icon-pinglun"><span class="componet">1234</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-li">
+                    <a href="" class="article-a">
+                        <div class="a-a-top">
+                            <img class="a-a-image" src="./images/bbs-1.png" alt="">
+                            <span class="a-a-title">马云首创马云首创马云首创马云首创马云首创马云首创</span>
+                            <span class="a-a-name">人马科技</span>
+                        </div>
+                        <div class="a-a-center">马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创</div>
+                        <div class="a-a-bottom">
+                            <span class="wuyefont icon-shijian"><span class="time">2017-03-02</span></span>
+                            <span class="wuyefont icon-icons64x6416"><span class="watch">1234</span></span>
+                            <span class="wuyefont icon-pinglun"><span class="componet">1234</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-li">
+                    <a href="" class="article-a">
+                        <div class="a-a-top">
+                            <img class="a-a-image" src="./images/bbs-1.png" alt="">
+                            <span class="a-a-title">马云首创马云首创马云首创马云首创马云首创马云首创</span>
+                            <span class="a-a-name">人马科技</span>
+                        </div>
+                        <div class="a-a-center">马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创</div>
+                        <div class="a-a-bottom">
+                            <span class="wuyefont icon-shijian"><span class="time">2017-03-02</span></span>
+                            <span class="wuyefont icon-icons64x6416"><span class="watch">1234</span></span>
+                            <span class="wuyefont icon-pinglun"><span class="componet">1234</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-li">
+                    <a href="" class="article-a">
+                        <div class="a-a-top">
+                            <img class="a-a-image" src="./images/bbs-1.png" alt="">
+                            <span class="a-a-title">马云首创马云首创马云首创马云首创马云首创马云首创</span>
+                            <span class="a-a-name">人马科技</span>
+                        </div>
+                        <div class="a-a-center">马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创</div>
+                        <div class="a-a-bottom">
+                            <span class="wuyefont icon-shijian"><span class="time">2017-03-02</span></span>
+                            <span class="wuyefont icon-icons64x6416"><span class="watch">1234</span></span>
+                            <span class="wuyefont icon-pinglun"><span class="componet">1234</span></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="article-li">
+                    <a href="" class="article-a">
+                        <div class="a-a-top">
+                            <img class="a-a-image" src="./images/bbs-1.png" alt="">
+                            <span class="a-a-title">马云首创马云首创马云首创马云首创马云首创马云首创</span>
+                            <span class="a-a-name">人马科技</span>
+                        </div>
+                        <div class="a-a-center">马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创马云首创</div>
+                        <div class="a-a-bottom">
+                            <span class="wuyefont icon-shijian"><span class="time">2017-03-02</span></span>
+                            <span class="wuyefont icon-icons64x6416"><span class="watch">1234</span></span>
+                            <span class="wuyefont icon-pinglun"><span class="componet">1234</span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 版区 -->
+        <div class="article bbs-two">
+            <!-- bbs页导航 -->
+            <div class="bbs-nav-wrap">
+                <ul class="nav-ul">
+                    <li>
+                        <a class="nav-l-a" href="">
+                            <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                            <span class="nav-l-name">银行界</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-l-a" href="">
+                            <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                            <span class="nav-l-name">网络贷款</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-l-a" href="">
+                            <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                            <span class="nav-l-name">信用贷款</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-l-a" href="">
+                            <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                            <span class="nav-l-name">POS机</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-l-a" href="">
+                            <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
+                            <span class="nav-l-name">提额攻略</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="article-title red-slide">精选帖子</div>
+
+            <div class="hot-list clearfix choose-list">
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2">全民免息，100%中奖，还有机会借钱不用还</span>
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2">全民免息，100%中奖，还有机会借钱不用还</span>
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2">全民免息，100%中奖，还有机会借钱不用还</span>
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2">全民免息，100%中奖，还有机会借钱不用还</span>
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="./images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2">全民免息，100%中奖，还有机会借钱不用还</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 个人中心 -->
+    <div class="user">
+        <div class="user-top">
+            <a class='wuyefont icon-information' href=""></a>
+            <a href="">提现</a>
+        </div>
+        <div class="center">
+            <img class="user-img" src="./images/index-nav-1.png" alt="">
         </div>
     </div>
     <!-- tab栏 -->
