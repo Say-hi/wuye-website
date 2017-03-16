@@ -38,4 +38,14 @@ $(function(){
         $(articles[id]).removeClass('hidden');
         $(this).addClass("active");
     })
+
+    // gotobbs 
+    $('.gotobbs').on('click',function(){
+        for (var i = 0; i < hometabs.length; i++) {
+            $(hometabs[i]).removeClass('redcolor');
+            $(wraps[i]).addClass('hidden');
+        }
+         $(hometabs[2]).addClass("redcolor");
+         $(wraps[2]).removeClass('hidden');
+    })
 })

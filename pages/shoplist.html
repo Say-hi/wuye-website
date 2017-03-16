@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>POS机</title>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- shoplist.css -->
+    <link rel="stylesheet" href="../css/shoplist.css">
+    <style>
+      html {
+        background-color: #f6f6f6;
+      }
+      .hot {
+        margin-top: 0.267rem;
+      }
+      .hot-l-a:nth-last-child(1) {
+        border-bottom: none;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <!-- jquery -->
+    <script src="../js/lib/jquery-3.1.0.min.js"></script>
+    <!-- rem -->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+    <div class="shoplist">
+      <div class="hot">
+            <!-- hot-list -->
+            <div class="hot-list">
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="../images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="../images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="../images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="../images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="../images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="../images/index-star.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="hot-l-a">
+                    <img class="hot-l-a-l" src="../images/index-hot-list.png" alt="">
+                    <div class="hot-l-a-c">
+                        <span class="hot-l-a-c-1">2345贷款王-现金贷</span>
+                        <span class="hot-l-a-c-2 triangle">全民免息，100%中奖，还有机会借钱不用还</span>
+                        <span class="hot-l-a-c-3"><span class="redcolor">97896人</span>已放款</span>
+                        <img class="hot-l-t-start" src="../images/index-star.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div> 
+    <div class="bank">
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>   
+      </div>
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>   
+      </div>
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>   
+      </div>
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>
+      </div>
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>   
+      </div>
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>   
+      </div>
+      <div class="bank-wrap">
+        <img class="bank-icon" src="../images/index-nav-1.png"/>
+        <div class="bank-info">
+          <span class="b-i-name">工行信用卡专区</span>
+          <div class="b-i-number">
+            <span class="b-i-theme">主题：27.7万</span>
+            <span class="b-i-number">贴数：417.7万</span>
+          </div>
+        </div>
+        <button id='icbc' class="btn">关注</button>   
+      </div>
+    </div>
+</body>
+</html>
+<script>
+// 获取地址中的type参数
+var type = (function () {
+            var reg = new RegExp("(^|&)" + "type" + "=([^&]*)(&|$)"); 
+            var r = window.location.search.substr(1).match(reg); 
+            if (r != null) return unescape(r[2]); return null; 
+        })()
+
+console.log(type);
+if(type == "bank") {
+  $('.shoplist').addClass('hidden');
+}else {
+  $('.bank').addClass('hidden');
+}
+$("title").text(type);
+//
+</script>

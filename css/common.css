@@ -5,6 +5,9 @@ a {
     text-decoration: none;
     color: #333;
 }
+input {
+    border: none;
+}
 /*清除浮动*/
 .clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
 .clearfix{zoom:1} 
@@ -40,4 +43,70 @@ a {
     width: 0.08rem;
     height: 0.427rem;
     background-color: #ee2911;
+}
+/*hot-list*/
+.hot {
+    margin-top: -0.106667rem;
+    background-color: #fff;
+}
+.hot-top {
+    height: 0.826667rem;
+    border-bottom: 0.013333rem solid #eee;
+}
+.hot-icon {
+    width: 0.32rem;
+    height: 0.373333rem;
+    vertical-align: text-bottom;
+    padding-left: 0.333333rem;
+}
+.hot-title {
+    line-height: 0.826667rem;
+    padding-left: 0.133333rem;
+    font-size: 0.32rem;
+}
+.hot-list {
+   
+    box-sizing: border-box;
+    
+}
+.hot-l-a {
+    display: flex;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background-color: #fff;
+    border: 0.013333rem solid #eee;
+}
+.hot-l-a:nth-last-child(1) {
+    border-bottom: 1.173333rem solid transparent;
+}
+.hot-l-a-l {
+    width: 1.333333rem;
+    height: 1.546667rem;
+}
+.hot-l-a-c {
+    padding-left: 0.413333rem;
+    position: relative;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hot-l-a-c-1 {
+    font-size: 0.373333rem;
+}
+.hot-l-a-c-2 {
+    font-size: 0.346667rem;
+}
+.hot-l-a-c-3 {
+    font-size: 0.32rem;
+}
+.hot-l-a-c-2, .hot-l-a-c-3 {
+    color: #999;
+}
+.hot-l-t-start {
+    position: absolute;
+    top: 0;
+    right: 2.666667rem;
+    height: 0.32rem;
+    width: 1.893333rem;
 }

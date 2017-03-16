@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>提额攻略</title>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+      html {
+        background-color: #f6f6f6;
+      }
+      .bank {
+        margin-top: 0.12rem;
+      }
+      .bank-wrap {
+          position: relative;
+          padding: 0.373rem 0.4rem;
+          background-color: #fff;
+          box-sizing: border-box;
+          height: 1.853rem;
+          border-bottom: 0.013rem solid #dcdddd;
+          display: flex;
+          /*justify-content: space-between;*/
+          align-items: center;
+      }
+      .bank-info {
+          margin-left: 0.587rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          line-height: 0.6rem;
+      }
+      .b-i-name {
+          font-size: 0.373rem;
+          color: #ee2911;
+      }
+      .b-i-number {
+          display: flex;
+          font-size: 0.32rem;
+          color: #333;
+      }
+      .triangle::after {
+        top: -16%;
+        right: -4.28rem;
+      }
+      .wuyefont{
+        font-size: 0.6rem;
+      }
+      .wuyefont::before{
+        position: relative;
+        z-index: 5;
+        color: #fff;
+      }
+      .wuyefont::after {
+        position: absolute;
+        top: 25%;
+        left: 2%;
+        display: block;
+        content: '';
+        background-color: #f15441;
+        width: 0.96rem;
+        height: 0.96rem;
+        border-radius: 50%;
+      }
+    </style>
+    <!-- jquery -->
+    <script src="../js/lib/jquery-3.1.0.min.js"></script>
+    <!-- rem -->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+  <div class="bank">
+    <a href="../pages/newbie.html?type=newbie" class="bank-wrap">
+      <i class="wuyefont icon-wujiaoxingxiankuang"></i>
+      <span class="bank-info">
+        <span class="b-i-name">[新手指南]</span>
+        <span class="b-i-number">
+          <span class="b-i-theme triangle">教你如何快速提升额度</span>
+        </span>
+      </span>
+    </a>
+    <a href="../pages/newbie.html?type=must" class="bank-wrap">
+      <i class="wuyefont icon-message"></i>
+      <span class="bank-info">
+        <span class="b-i-name">[新手必读]</span>
+        <span class="b-i-number">
+          <span class="b-i-theme triangle">教你如何快速提升额度</span>
+        </span>
+      </span>
+    </a>
+  </div>
+</body>
+</html>

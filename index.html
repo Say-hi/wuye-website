@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
     <title>首页</title>
-    <!--rem布局计算-->
-    <script>
-      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="divport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","divport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
-    </script>
     <!-- 字体图标 -->
     <link rel="stylesheet" type="text/css" href="./font/iconfont.css">
     <!--初始化css-->
@@ -19,6 +15,10 @@
     <link rel="stylesheet" href="./css/common.css">
     <!-- 首页样式 -->
     <link rel="stylesheet" href="./css/index.css">
+    <!--rem布局计算-->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
 </head>
 <body>
     <!--轮播图-->
@@ -32,7 +32,7 @@
         <div class="swiper-pagination"></div>
     </div>
     <!-- home页 -->
-    <div class="wrap home hidden">
+    <div class="wrap home ">
         <!-- 告示 -->
         <div class="billbard">
             <img class="icon" src="./images/play.png" alt="">
@@ -55,27 +55,28 @@
         <!-- 首页导航 -->
         <ul class="nav-ul">
             <li>
-                <a class="nav-l-a" href="">
+                <a class="nav-l-a" href="./pages/shoplist.html?type=allLoan">
                     <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
                     <span class="nav-l-name">贷款大全</span>
                 </a>
             </li>
             <li>
-                <a class="nav-l-a" href="">
+                <a class="nav-l-a" href="./pages/shoplist.html?type=recommend">
                     <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
-                    <span class="nav-l-name">贷款大全</span>
+                    <span class="nav-l-name">帮你推荐</span>
                 </a>
             </li>
             <li>
-                <a class="nav-l-a" href="">
+                <!-- 贷款论坛跳转 -->
+                <div class="nav-l-a gotobbs" href="">
                     <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
-                    <span class="nav-l-name">贷款大全</span>
-                </a>
+                    <span class="nav-l-name">贷款论坛</span>
+                </div>
             </li>
             <li>
-                <a class="nav-l-a" href="">
+                <a class="nav-l-a" href="./pages/shoplist.html?type=invite">
                     <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
-                    <span class="nav-l-name">贷款大全</span>
+                    <span class="nav-l-name">邀请有奖</span>
                 </a>
             </li>
         </ul>
@@ -238,14 +239,14 @@
         </div>
     </div>
     <!-- 论坛页面 -->
-    <div class="wrap bbs ">
+    <div class="wrap hidden bbs ">
         <!-- tab切换 -->
         <div class="bbs-tab">
             <span id='4' class="bbs-t active">精选</span>
             <span id='5' class="bbs-t">版区</span>
         </div>
         <!-- 精选 -->
-        <div class="article hidden bbs-one">
+        <div class="article  bbs-one">
             <div class="article-title red-slide">精选帖子</div>
             <ul class="article-ul">
                 <li class="article-li">
@@ -326,36 +327,36 @@
             </ul>
         </div>
         <!-- 版区 -->
-        <div class="article bbs-two">
+        <div class="article hidden bbs-two">
             <!-- bbs页导航 -->
             <div class="bbs-nav-wrap">
                 <ul class="nav-ul">
                     <li>
-                        <a class="nav-l-a" href="">
+                        <a class="nav-l-a" href="./pages/shoplist.html?type=bank">
                             <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
-                            <span class="nav-l-name">银行界</span>
+                            <span class="nav-l-name">银行街</span>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-l-a" href="">
+                        <a class="nav-l-a" href="./pages/shoplist.html?type=networkloan">
                             <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
                             <span class="nav-l-name">网络贷款</span>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-l-a" href="">
+                        <a class="nav-l-a" href="./pages/shoplist.html?type=credit">
                             <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
                             <span class="nav-l-name">信用贷款</span>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-l-a" href="">
+                        <a class="nav-l-a" href="./pages/shoplist.html?type=pos">
                             <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
                             <span class="nav-l-name">POS机</span>
                         </a>
                     </li>
                     <li>
-                        <a class="nav-l-a" href="">
+                        <a class="nav-l-a" href="./pages/shoplist.html?type=strategy">
                             <img class="nav-l-image" src="./images/index-nav-1.png" alt="">
                             <span class="nav-l-name">提额攻略</span>
                         </a>
@@ -404,13 +405,46 @@
         </div>
     </div>
     <!-- 个人中心 -->
-    <div class="user">
+    <div class="wrap user hidden">
         <div class="user-top">
             <a class='wuyefont icon-information' href=""></a>
-            <a href="">提现</a>
+            <a class="u-t-money" href="">提现</a>
         </div>
-        <div class="center">
-            <img class="user-img" src="./images/index-nav-1.png" alt="">
+        <div class="user-center">
+            <img class="user-c-img" src="./images/index-nav-1.png" alt="">
+            <span class="user-c-name">人马科技</span>
+            <span class="user-c-money">余额：<i class="user-c-number">0</i>元</span>
+        </div>
+        <div class="user-bottom">
+            <a href='' class="u-b-a">
+                <i class="wuyefont icon-zhangshangcaifuyemianshoujiban344"></i>
+                <span>朋友圈推广</span>
+            </a>
+            <a href='' class="u-b-a">
+                <i class="wuyefont icon-chuanchengshejiiconzitihua01"></i>
+                <span>二维码推广</span>
+            </a>
+            <a href='' class="u-b-a">
+                <i class="wuyefont icon-yongjin1"></i>
+                <span>用户返佣</span>
+            </a>
+        </div>
+        <div class="user-info">
+            <a href="./pages/user.html" class="u-i-user userinfo">
+                <span class="wuyefont icon-information triangle u-i-text">个人信息</span>
+            </a>
+            <a href="./pages/backmoney.html" class="u-i-user backmoney">
+                <span class="wuyefont icon-yongjin triangle u-i-text">返佣明细</span>
+            </a>
+            <a href="./pages/deposit.html" class="u-i-user deposit">
+                <span class="wuyefont icon-tixian triangle u-i-text">提现记录</span>
+            </a>
+            <a href="./pages/loanhistory.html" class="u-i-user loanhistory">
+                <span class="wuyefont icon-lishi triangle u-i-text">借款历史</span>
+            </a>
+            <a href="./pages/aboutus.html" class="u-i-user">
+                <span class="wuyefont icon-guanyu-copy triangle u-i-text">关于我们</span>
+            </a>
         </div>
     </div>
     <!-- tab栏 -->

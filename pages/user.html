@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- user.css -->
+    <link rel="stylesheet" href="../css/user.css">
+    <!-- jquery -->
+    <script src="../js/lib/jquery-3.1.0.min.js"></script>
+    <!-- rem -->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 必填信息 -->
+        <span class="must-title redcolor">必填信息*</span>
+        <form class="user" action="">
+            <div class="info-wrap u-name">
+                <span>本人姓名</span>
+                <input type="text" placeholder="姓名" name='name'>
+            </div>
+            <div class="info-wrap u-gender">
+                <span>性别</span>
+                <input type="text" placeholder="男/女" name='gender'>
+            </div>
+            <div class="info-wrap u-age">
+                <span>年龄</span>
+                <input type="text" placeholder="30" name='gender'>
+            </div>
+            <div class="info-wrap u-address">
+                <span>所在省份</span>
+                <input type="text" placeholder="请输入所在省份" name='province'>
+            </div>
+            <div class="user-gray"></div>
+            <div class="info-wrap u-phone">
+                <span>手机号码</span>
+                <input type="number" placeholder="请输入手机号码" name='phone'>
+            </div>
+            <div class="info-wrap u-qq">
+                <span>手机号码</span>
+                <input type="number" placeholder="请输入QQ号码" name='qq'>
+            </div>
+        </form>
+        <!-- 选填信息 -->
+        <span class="choose-title redcolor">选填信息</span>
+        <form class="user" action="">
+            <div class="info-wrap u-card">
+                <span>有无信用卡</span>
+                <input type="text" placeholder="有无信用卡" name='card'>
+            </div>
+            <div class="info-wrap u-zhima">
+                <span>芝麻分</span>
+                <input type="text" placeholder="芝麻分分数" name='zhima'>
+            </div>
+        </form>
+        <span class="check-title redcolor">认证中心</span>
+        <div class="info-wrap u-check-card">
+            <a href="">
+                <span class="triangle">实名认证</span>
+            </a>
+        </div>
+        <div class="info-wrap u-chekc-phone">
+            <a href="">
+                <span class="triangle">手机号认证</span>
+            </a>
+        </div>
+        <div class="info-wrap u-check-zhima">
+            <a href="">
+                <span class="triangle">芝麻信用认证</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.bank {
+    margin-top: 0.12rem;
+}
+.bank-icon {
+    width: 0.747rem;
+    height: 0.747rem;
+}
+.bank-wrap {
+    position: relative;
+    padding: 0.373rem 0.4rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 1.853rem;
+    border-bottom: 0.013rem solid #dcdddd;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.bank-info {
+    margin-left: 0.587rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 0.6rem;
+}
+.b-i-name {
+    font-size: 0.373rem;
+    color: #282828;
+}
+.b-i-number {
+    display: flex;
+    font-size: 0.32rem;
+    color: #666;
+}
+.btn {
+    position: absolute;
+    right: 0.493rem;
+    width: 1.333rem;
+    height: 0.633rem;
+    color: #999;
+    background-color: #fff;
+    border-radius: 10%;
+}

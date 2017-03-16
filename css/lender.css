@@ -1,0 +1,122 @@
+/*----------------------商家信息------------------*/
+.shop-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    font-size: 0.32rem;
+    padding: 0.347rem 0.267rem;
+    height: 1.867rem;
+    box-sizing: border-box;
+}
+.shop-img {
+    width: 1.133rem;
+    height: 1.187rem;
+}
+.shop-info {
+    padding: 0.167rem 0;
+    padding-left: 0.267rem;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shop-star {
+    color: #ee9b25;
+    font-size: 0.32rem;
+    padding-left: 0.093rem;
+}
+.shop-people {
+    line-height: 1.567rem;
+}
+.shop-about{
+    font-size: 0.347rem;
+    height: 2.307rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.267rem 0.333rem;
+    border-bottom: 0.013rem solid #e3e3e5;
+}
+.wuyefont {
+    font-size: 0.32rem;
+}
+.shop-about .wuyefont::before {
+    color: #f00;
+    margin-right: 0.333rem;
+}
+.s-a-money, .s-a-time {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.triangle::after {
+    border-color: #999;
+}
+.s-a-m-right, .s-a-t-right {
+    display: block;
+    width: 0.967rem;
+    padding-right: 1.267rem;
+    text-align: left;
+}
+.red {
+    color: #f00;
+}
+.shop-bottom {
+    box-sizing: border-box;
+    height: 1.867rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.4rem 0.773rem;
+    border-bottom: 0.013rem solid #c8c7cc;
+}
+.s-b-left, .s-b-center, .s-b-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/*------------------商家活动----------------------------*/
+.btop {
+    border-top: 0.267rem solid #efeff4;
+}
+.active, .qualification, .materila, .notice {
+    height: 1.84rem;
+    padding-left: 0.267rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.color999 {
+    color: #999;
+}
+.title {
+    margin-left: 0.267rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+.red-slide::before {
+    left: -0.267rem;
+    top: 10%;
+}
+.icon-recommend {
+    font-size: 0.347rem;
+}
+.icon-recommend::before {
+    color: #37bf41;
+    margin-right: 0.133rem;
+}
+.qualification {
+    height: 4.4rem;
+    padding-right: 1.767rem;
+    line-height: 0.533rem;
+    justify-content: flex-start;
+    padding-top: 0.4rem;
+}
+.qualification .text {
+    margin-top: 0.267rem;
+}
+.materila {
+    padding-right: 1.767rem;    
+}

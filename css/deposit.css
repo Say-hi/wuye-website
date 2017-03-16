@@ -1,0 +1,33 @@
+.deposit {
+    padding: 0 0.267rem;
+    border-top: 0.12rem solid #e4e4e4;
+}
+.wrap {
+    height: 2.533rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.013rem solid #e4e4e4;
+}
+.deposit-left, .deposit-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.d-l-number {
+    font-size: 0.4rem;
+}
+.d-r-status {
+    text-align: center;
+    font-size: 0.347rem;
+}
+.d-l-time {
+    font-size: 0.373rem;
+}
+.d-r-money {
+    font-size: 0.427rem;
+}
+.wait {
+    color: #f00;
+}

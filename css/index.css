@@ -1,5 +1,5 @@
 html {
-    background-color: #eee;
+    background-color: #f6f6f6;
 }
 .hidden {
     display: none;
@@ -86,70 +86,7 @@ html {
     font-size: 0.32rem;
 }
 /*-------------hot--------------*/
-.hot {
-    margin-top: -0.106667rem;
-    background-color: #fff;
-}
-.hot-top {
-    height: 0.826667rem;
-    border-bottom: 0.013333rem solid #eee;
-}
-.hot-icon {
-    width: 0.32rem;
-    height: 0.373333rem;
-    vertical-align: text-bottom;
-    padding-left: 0.333333rem;
-}
-.hot-title {
-    line-height: 0.826667rem;
-    padding-left: 0.133333rem;
-    font-size: 0.32rem;
-}
-.hot-list {
-   
-    box-sizing: border-box;
-    
-}
-.hot-l-a {
-    display: flex;
-    padding-top: 0.4rem;
-    background-color: #fff;
-    border: 0.013333rem solid #eee;
-}
-.hot-l-a:nth-last-child(1) {
-    border-bottom: 1.173333rem solid transparent;
-}
-.hot-l-a-l {
-    width: 1.333333rem;
-    height: 1.546667rem;
-}
-.hot-l-a-c {
-    padding-left: 0.413333rem;
-    position: relative;
-    flex: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.hot-l-a-c-1 {
-    font-size: 0.373333rem;
-}
-.hot-l-a-c-2 {
-    font-size: 0.346667rem;
-}
-.hot-l-a-c-3 {
-    font-size: 0.32rem;
-}
-.hot-l-a-c-2, .hot-l-a-c-3 {
-    color: #999;
-}
-.hot-l-t-start {
-    position: absolute;
-    top: 0;
-    right: 2.666667rem;
-    height: 0.32rem;
-    width: 1.893333rem;
-}
+
 /*----------------tab-------------------*/
 .tab {
     width: 100%;
@@ -354,9 +291,121 @@ html {
 /*---------------------bbs论坛样式------------e*/
 
 /*---------------------user个人中心样式------------s*/
+.user {
+    background: #fff;
+}
 .user-img {
     width: 1.653rem;
     height: 1.653rem;
 }
-
+.user-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.173333rem 0.293333rem;
+    align-items: center;
+    background-color: #f03e28;
+}
+.user-top > a {
+    color: #fff;
+}
+.u-t-money {
+    font-size: 0.373333rem;
+}
+.user-center {
+    margin-top: -0.027rem;
+    height: 4.24rem;
+    box-sizing: border-box;
+    background-color: #F03E28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    padding: 0.466667rem;
+    padding-bottom: 0;
+    position: relative;
+z-index: 999;
+}
+.user-center::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+    height: 2.667rem;
+    border-radius: 50%;
+    background-color: #F03E28;
+    border-radius: 50%;
+    z-index: -1;
+}
+.user-c-img {
+    width: 1.653333rem;
+    height: 1.653333rem;
+}
+.user-c-number {
+    font-style: normal;
+    color: #000;
+}
+.user-c-name {
+    font-size: 0.373rem;
+}
+.user-c-money {
+    font-size: 0.48rem;
+}
+.user-bottom {
+    padding: 0 0.693rem;
+    margin-top: 1.367rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0.027rem 0.133rem #999;
+}
+.user-bottom::after {
+    position: absolute;
+    top: -0.05rem;
+    margin-left: -0.693rem;
+    content: '';
+    width: 100%;
+    height: 0.05rem;
+    background-color: #fff;
+}
+.user-bottom .wuyefont {
+    font-size: 0.867rem;
+}
+.u-b-a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.u-b-a > span {
+    padding-bottom: 0.187rem;
+    padding-top: 0.133rem;
+    font-size: 0.267rem;
+    margin-top: -0.05rem;
+}
+.user-info {
+    margin-top: 0.093rem;
+    border-top: 0.133rem solid #f6f6f6;
+}
+.u-i-user {
+    display: block;
+    height: 0.853rem;
+    box-sizing: border-box;
+    padding: 0.187rem 0.267rem 0.213rem;
+    border-bottom: 0.093rem solid #f6f6f6;
+}
+.u-i-user > span {
+    display: block;
+    width: 100%;
+    font-size: 0.373rem;
+    color: #666;
+} 
+.u-i-user .wuyefont::before {
+    padding-right: 0.12rem;
+    color: #ee2911;
+} 
+.triangle {
+    right: 0;
+}
 /*---------------------user个人中心样式------------e*/

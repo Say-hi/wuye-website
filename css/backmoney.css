@@ -1,0 +1,10 @@
+.backmoney-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1.08rem;
+    padding: 0 0.32rem;
+    font-size: 0.347rem;
+    border-top: 0.013rem solid #eee;
+    border-bottom: 0.013rem solid #eee;
+}

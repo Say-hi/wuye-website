@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>申请借款</title>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- lender.css -->
+    <link rel="stylesheet" href="../css/lender.css">
+    <!-- jquery -->
+    <script src="../js/lib/jquery-3.1.0.min.js"></script>
+    <!-- rem -->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+    <div class="applyLoan">
+    <!-- 借款结构信息 -->
+      <div class="shop-top">
+          <img class="shop-img" src="../images/lender-1.png" alt="">
+          <div class="shop-info">
+              <span class="shop-name">魔法现金贷</span>
+              <span class="shop-rate">成功率<span class="shop-star wuyefont icon-wuxing"></span></span>
+          </div>
+          <span class="shop-people"><i class="s-p-number">801</i>人借款</span>
+      </div>
+      <div class="shop-about">
+          <a  href="" class="s-a-money">
+              <span class="s-a-m-left wuyefont icon-tixian">借款金额</span>
+              <span class="s-a-m-right triangle"><i class="s-a-m-money">500</i>元</span>
+          </a>
+          <a href="" class="s-a-time">
+              <span class="s-a-t-left wuyefont icon-lishi1">借款周期</span>
+              <span class="s-a-t-right triangle"><i class="s-a-t-day">1</i>天</span>
+          </a>
+      </div>
+      <div class="shop-bottom">
+          <div class="s-b-left">
+              <span class="s-b-money red"><i class="s-b-m-money">500.1</i>元</span>
+              <span class="s-b-text">到时还款</span>
+          </div>
+          <div class="s-b-center">
+              <span class="s-b-rate red">0.02%</span>
+              <span>参考日利率</span>
+          </div>
+          <div class="s-b-right">
+              <span class="s-b-time red"><i class="s-b-t-time">24</i>分钟</span>
+              <span>最快放款时间</span>
+          </div>
+      </div>
+      <!-- 借款条件相关 -->
+      <div class="active btop">
+          <span class="title red-slide">参与活动</span>
+          <span class="wuyefont icon-recommend color999">推荐商家，通过率极高</span>
+      </div>
+      <div class="qualification btop">
+          <span class="title red-slide">申请资格</span>
+          <span class="text color999">无论您是何种职业，收入状况如何，只要您年满18周岁，有稳定使用的手机号码和稳定的收入即可申请</span>
+      </div>
+      <div class="materila btop">
+        <span class="title red-slide">所需材料</span>
+        <span class="text color999">提供本人身份信息、本人银行卡，正确填写个人基本信息即可申请借款</span>
+      </div>
+      <div class="notice btop">
+        <span class="title red-slide">注意事项</span>
+        <span class="text color999">信息务必真实</span>
+      </div>
+      <button class="applybtn">立即申请</button>
+    </div> 
+</body>
+</html>
