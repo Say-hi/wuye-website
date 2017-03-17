@@ -8,6 +8,7 @@ a {
 input {
     border: none;
 }
+
 /*清除浮动*/
 .clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
 .clearfix{zoom:1} 

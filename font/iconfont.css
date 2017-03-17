@@ -1,10 +1,10 @@
 
 @font-face {font-family: "wuyefont";
-  src: url('iconfont.eot?t=1489667438768'); /* IE9*/
-  src: url('iconfont.eot?t=1489667438768#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1489667438768') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1489667438768') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1489667438768#wuyefont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1489741888557'); /* IE9*/
+  src: url('iconfont.eot?t=1489741888557#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1489741888557') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1489741888557') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1489741888557#wuyefont') format('svg'); /* iOS 4.1- */
 }
 
 .wuyefont {
@@ -26,6 +26,8 @@
 .icon-dianhua:before { content: "\e61d"; }
 
 .icon-message:before { content: "\e637"; }
+
+.icon-laba:before { content: "\e657"; }
 
 .icon-yongjin:before { content: "\e670"; }
 

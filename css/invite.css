@@ -1,0 +1,101 @@
+.invite {
+    display: block;
+    position: relative;
+    background: url('../images/invite-wrap.png') no-repeat;
+    background-size: 100%;
+}
+.friend {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 3.667rem;
+    height: 1.333rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+.info-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0.893rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 55%;
+}
+.i-w-top {
+    display: flex;
+}
+.number-info {
+    margin-left: 0.267rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.number-info > span {
+    color: #fff;
+    font-size: 0.453rem;
+    font-weight: 600;
+}
+.number {
+    font-size: 0.533rem;
+    color: #ff0;
+}
+.swipe {
+    margin-top: 0.293rem;
+    width: 8.187rem;
+    height: 0.84rem;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 0.43rem;
+    display: flex;
+    align-items: center;
+}
+.wuyefont {
+    position: relative;
+}
+.wuyefont::before {
+    color: #ff0;
+    font-size: 0.667rem;
+    position: absolute;
+    left: 0.267rem;
+}
+.swiper-container{
+     width: 6.787rem;
+     margin-left: 1rem;
+}
+.swiper-slide {
+    font-size: 0.4rem;
+    color: #fff;
+}
+.ruler {
+    padding-top: 0.133rem;
+    color: #ff0;
+    text-align: center;
+    position: relative;
+}
+.ruler > span {
+    display: block;
+}
+.ruler-title {
+    position: relative;
+}
+.ruler-title::after, .ruler-title::before {
+    content: '';
+    top: 0.12rem;
+    width: 0.133rem;
+    height: 0.133rem;
+    border: 0.04rem solid #ff0;
+    border-radius: 50%;
+    position: absolute;
+}
+.ruler-title::before {
+    transform: translateX(-0.2rem);
+}
+html[data-dpr="1"] .money-img {
+    width: 127.5px;
+    height: 105px;
+}
+html[data-dpr="3"] .money-img {
+    width: 382.5px;
+    height: 315px;
+}

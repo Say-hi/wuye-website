@@ -1,0 +1,107 @@
+html {
+    background-color: #fff;
+}
+.id-front, .id-verso, .id-handle {
+    display: flex;
+    justify-content: space-between;
+    height: 3.947rem;
+    box-sizing: border-box;
+    padding: 0.587rem 0.987rem 0 0.987rem;
+    /*background-color: #eee;*/
+}
+.control-group {
+    position: relative;
+}
+.btn-showarea, .btn-showarea1, .btn-showarea2 {
+    width:  2.413rem;
+    height: 2.413rem;
+    border: 0.027rem dashed #272636;
+    position: relative;
+}
+.btn-showarea::before, .btn-showarea::after, .btn-showarea1::before, .btn-showarea1::after, .btn-showarea2::before, .btn-showarea2::after {
+    font-size: 0.347rem;
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+}
+.btn-showarea::after, .btn-showarea1::after, .btn-showarea2::after {
+    width: 100%;
+    transform: translate(-50%, 100%);
+    content: '身份证正面';
+    text-align: center;
+    color: #999;
+}
+.btn-showarea1::after {
+    content: '身份证反面';
+}
+.btn-showarea2::after {
+    display: block;
+    transform: translate(-50%, 350%);
+    width: 120%;
+    content: '手持身份证头部照';
+}
+.js_upFile, .js_upFile1, .js_upFile2 {
+    display: none;
+    width: 1.0rem;
+    height: 1.333rem
+}
+.js_showBox, .js_showBox1, .js_showBox2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0.027rem;
+    padding: 0.013rem;
+}
+.example-front {
+    width: 2.867rem;
+    height: 1.973rem;
+}
+.example, .example1, .example2 {
+    position: relative;
+}
+.example::before, .example::after, .example1::before, .example1::after, .example2::before, .example2::after {
+    content: '示例：';
+    position: absolute;
+    left: -40%;
+    font-size: 0.36rem;
+    color: #333;
+}
+.example::after, .example1::after, .example2::after {
+    content:'证件正面示例';
+    display: block;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    width: 2p
+}
+.example1::after {
+    content:'证件反面示例';
+}
+.example2::after {
+    content:'手持身份证头部照示例';
+    width: 150%;
+    left: -25%
+}
+/*---------------------------按钮------------------------------*/
+.btn {
+    width: 100%;
+    height: 2.0rem;
+    background-color: #fff;
+    padding: 1.533rem 0.96rem;
+    box-sizing: border-box;
+
+}
+.applybtn {
+    display: block;
+    width: 100%;
+    height: 1.067rem;
+    background-color: #ee2911;
+    color: #fff;
+    border-radius: 0.133rem;
+    text-align: center;
+    line-height: 1.067rem;
+    font-size: 0.4rem;
+}

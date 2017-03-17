@@ -4,6 +4,19 @@ html {
 .hidden {
     display: none;
 }
+/*---------轮播图样式-----------s*/
+.lunbo .swiper-pagination-bullet{
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #b34848;
+}
+.lunbo .swiper-pagination-bullet-active {
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #f00;
+}
+/*---------轮播图样式-----------e*/
+
 /*---------------------home首页样式------------s*/
 /*-----------------顶部轮播样式------------------*/
 .lunbo {
@@ -363,11 +376,11 @@ z-index: 999;
 }
 .user-bottom::after {
     position: absolute;
-    top: -0.05rem;
+    top: -0.1rem;
     margin-left: -0.693rem;
     content: '';
     width: 100%;
-    height: 0.05rem;
+    height: 0.15rem;
     background-color: #fff;
 }
 .user-bottom .wuyefont {

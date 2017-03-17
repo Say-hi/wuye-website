@@ -459,3 +459,5 @@ template {
 [hidden] {
   display: none;
 }
+
+a,img,button,input,textarea{-webkit-tap-highlight-color:rgba(255,255,255,0);}

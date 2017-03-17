@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>邀请有奖</title>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="../css/swiper/swiper.min.css">
+    <!-- aboutus.css -->
+    <link rel="stylesheet" href="../css/invite.css">
+    <!-- jquery -->
+    <script src="../js/lib/jquery-3.1.0.min.js"></script>
+    <!--swiper-->
+    <script src="../js/lib/swiper/swiper.jquery.min.js"></script>
+    <!-- rem -->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+    <div class="invite">
+        <!-- 跳转分享链接 -->
+       <a class="friend" href=""></a>
+       <div class="info-wrap">
+         <div class="i-w-top">
+          <img class="money-img" src="../images/invite-moeny.png" />
+          <div class="number-info">
+           <span>累计&nbsp;<span class="number people">1023203</span>人</span>
+           <span>共获得&nbsp;<span class="number money">467.8</span>万元</span>
+          </div>
+         </div>
+          <!--滚动信息-->
+         <div class="swipe wuyefont icon-laba">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">喵喵获得5元现金</div>
+              <div class="swiper-slide">张三获得5元现金</div>
+              <div class="swiper-slide">王五获得10元现金</div>
+            </div>
+          </div>
+         </div>
+         <!-- 活动规则 -->
+         <div class="ruler">
+            <div class="ruler-title">
+              ——————  活动规则  ——————
+            </div>
+            <span>活动规则</span>
+            <span>活动规则活动规则</span>
+            <span>活动规则</span>
+            <span>活动规则活动规则活动规则</span>
+         </div>
+       </div>
+    </div> 
+</body>
+</html>
+<script>
+$(function() {
+  var width = $(window).width();
+  var height = $(window).height();  
+  $('.invite').width(width).height(height);
+  // swiper
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 1000,//可选选项，自动滑动
+    // direction: 'vertical',
+    autoplayDisableOnInteraction : false,
+    loop: true,
+    onlyExternal : true,
+  })
+})
+</script>

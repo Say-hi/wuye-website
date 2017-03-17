@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>完善信息</title>
+    <!-- 字体图标 -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <!-- 初始化 -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- aboutus.css -->
+    <link rel="stylesheet" href="../css/idverify.css">
+    <!-- jquery -->
+    <script src="../js/lib/jquery-3.1.0.min.js"></script>
+    <!-- 图片上传js -->
+    <script src="../js/lib/jquery.uploadView.js"></script>
+    <!-- rem -->
+    <script>
+      !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
+    </script>
+</head>
+<body>
+  <!-- id正面 --> 
+  <div class="id-front">
+    <div class="control-group js_uploadBox">
+      <div class="btn-showarea" onclick="$('.js_upFile').click()"></div>
+      <input class="js_upFile" type="file" name="cover">
+      <div class="js_showBox"><img class="js_logoBox" src="" width="100px" ></div>
+    </div>
+    <!-- 示例图片位置 -->
+    <div class="example">
+      <img class="example-front" src="../images/idcard-1.png" />
+    </div>
+  </div>
+  <!-- id反面 -->
+  <div class="id-verso">
+    <div class="control-group js_uploadBox1">
+      <div class="btn-showarea1" onclick="$('.js_upFile1').click()"></div>
+      <input class="js_upFile1" type="file" name="cover">
+      <div class="js_showBox1"><img class="js_logoBox1" src="" width="100px" ></div>
+    </div>
+    <!-- 示例图片位置 -->
+    <div class="example1">
+      <img class="example-front" src="../images/idcard-1.png" />
+    </div>
+  </div>
+  <!-- id手持-->
+  <div class="id-handle">
+    <div class="control-group js_uploadBox2">
+      <div class="btn-showarea2" onclick="$('.js_upFile2').click()"></div>
+      <input class="js_upFile2" type="file" name="cover">
+      <div class="js_showBox2"><img class="js_logoBox2" src="" width="100px" ></div>
+    </div>
+    <!-- 示例图片位置 -->
+    <div class="example2">
+      <img class="example-front" src="../images/idcard-1.png" />
+    </div>
+  </div>
+  <div class="btn">
+    <a href="" class="applybtn">立即申请</a>
+  </div>
+</body>
+</html>
+<script>
+  $(function(){
+    // 正面id上传
+    $(".js_upFile").uploadView({
+      uploadBox: '.js_uploadBox',//设置上传框容器
+      showBox : '.js_showBox',//设置显示预览图片的容器
+      label: "'.btn-showarea'",
+      unit: 'rem',//设置尺寸单位 如果单位非px则宽高必须设置
+      width : 2.413, //预览图片的宽度，单位px
+      height : 2.413, //预览图片的高度，单位px
+      allowType: ["gif", "jpeg", "jpg", "bmp", "png"], //允许上传图片的类型
+      maxSize :2, //允许上传图片的最大尺寸，单位M
+      success:function(e){ //回调函数
+        // base64图片数据
+        // console.log(event.target.result);
+      }
+    });
+    // 反面id上传
+    $(".js_upFile1").uploadView({
+      uploadBox: '.js_uploadBox1',
+      showBox : '.js_showBox1',
+      label: "'.btn-showarea1'",
+      unit: 'rem',
+      width : 2.413, 
+      height : 2.413,
+      allowType: ["gif", "jpeg", "jpg", "bmp", "png"], 
+      maxSize :2, 
+      success:function(e){
+        
+      }
+    });
+    // 手持id上传
+    $(".js_upFile2").uploadView({
+      uploadBox: '.js_uploadBox2',
+      showBox : '.js_showBox2',
+      label: "'.btn-showarea2'",
+      unit: 'rem',
+      width : 2.413, 
+      height : 2.413, 
+      allowType: ["gif", "jpeg", "jpg", "bmp", "png"], 
+      maxSize :2,
+      success:function(e){ 
+        
+      }
+    });
+  })
+</script>
