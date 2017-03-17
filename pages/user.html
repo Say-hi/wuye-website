@@ -34,8 +34,13 @@
                 <input type="text" placeholder="30" name='gender'>
             </div>
             <div class="info-wrap u-address">
-                <span>所在省份</span>
-                <input type="text" placeholder="请输入所在省份" name='province'>
+                <span class="special">所在省份</span>
+                <div class="fullwidth relative ">
+                    <div class="index-nav pagn clearfix">
+                        <a id="mycity" class="a-style" href="javascript:void(0);"><span id="city-name">请选择城市</span></a>
+                    </div>
+                </div>
+                <!-- <input type="text" placeholder="请输入所在省份" name='province'> -->
             </div>
             <div class="user-gray"></div>
             <div class="info-wrap u-phone">
@@ -76,5 +81,20 @@
             </a>
         </div>
     </div>
+    <div id="shade" class="shade hidden "></div>
 </body>
 </html>
+<script src="../js/user.js"></script>
+<script>
+    new region({
+        dataSrc:'../add.json',
+        defaultCity:'广州',
+        grade:'3',
+        poster: 'mycity',
+        shade: 'shade',
+        callback: function (city) {
+            document.getElementById('city-name').innerHTML=city||'';
+            console.log("city: "+city);
+        }
+    });
+</script>

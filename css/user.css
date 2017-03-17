@@ -41,3 +41,129 @@
     width: 100%;
     background-color: #f2f2f2;
 }
+.special {
+    width: 2rem;
+}
+/*三级联动样式*/
+.relative{
+    position: relative;
+}   
+.fullwidth{
+    width:100%;
+    height: 0.74rem;
+    border-top: 0.013rem solid #eee;
+}
+.index-nav{
+    line-height: 22px;
+    background-color: #08B885;
+    overflow: hidden;
+}
+a, a:link, a:visited, a:hover, a:active{
+    /*color: #4A4A4A; */
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+.a-style{
+    margin-right: 20px;
+    float: left;
+    position: absolute;
+}
+.textc{text-align: center;}
+.shade{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width:100%;
+    height:100%;
+}
+.hidden{
+    display: none;
+}
+
+/*三级联动*/
+
+.dataAdd {
+            background-color: #f1f1f1;
+            height: 230px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            margin-bottom: -230px;
+            z-index: 1000;
+        }
+        .box_btn {
+            height: 40px;
+            line-height: 40px;
+            background-color: #fff;
+            padding: 0 20px;
+        }
+        #determine {
+            float: right;
+        }
+        #box {
+            height: 200px;
+            overflow: hidden;
+            -webkit-mask: -webkit-gradient(linear, 0% 50%, 0% 0%, from(#debb47), to(rgba(36, 142, 36, 0)));
+            transition: all .2s;
+        }
+        #box .box_info > div {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+        }
+        #box .box_info > div ul {
+            position: relative;
+            z-index: 10;
+        }
+        #box .box_info > div ul li {
+            line-height: 30px;
+            overflow: hidden;
+            height: 30px;
+        }
+        .box_info {
+            -webkit-mask: -webkit-gradient(linear, 0% 50%, 0% 100%, from(#debb47), to(rgba(36, 142, 36, 0)));
+            overflow: hidden;
+            height: 200px;
+            position: relative;
+        }
+        .border {
+            border: 1px solid #ccc;
+            position: absolute;
+            height: 30px;
+            top: 50%;
+            margin-top: -30px;
+            width: 33.33%;
+            border-left: none;
+            border-right: none;
+        }
+        #city + .border {
+            left: 33.33%;
+        }
+        #area + .border {
+            left: 66.66%;
+        }
+        .inp {
+            margin: 20px auto;
+            width: 90%;
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 5px;
+            border: none;
+            border: 1px solid #999;
+            padding-left: 15px;
+            box-sizing: border-box;
+        }
+        .current-city {
+            position: absolute;
+            left: 41%;
+        }
+#city-name {
+    width: 100%;
+    text-align: right;
+}

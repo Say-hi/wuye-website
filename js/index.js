@@ -48,5 +48,4 @@ $(function(){
          $($hometabs[2]).addClass("redcolor");
          $($wraps[2]).removeClass('hidden');
     })
-    
 })
