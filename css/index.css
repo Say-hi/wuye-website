@@ -28,12 +28,38 @@ html {
     height: 4.4rem;
     background-color: red;
 }
+.lunbo .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
 /*-----------------告示轮播样式----------------*/
+.icon-laba1::before {
+    font-size: 0.933rem;
+    animation: mymove 10s linear 0s infinite;
+}
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+    0% {
+        color: #333;
+    }
+    25% {
+        color: #ff0;
+    }
+    50% {
+        color: #f60;
+    }
+    75% {
+        color: #cf0;
+    }
+    100% {
+        color: #f00;
+    }
+}
 .billbard {
     margin-top: 0.106667rem;
     background-color: #fff;
     display: flex;
-    padding: 0 0.493333rem;
+    padding-left: 0.493333rem;
 }
 .icon {
     width: 0.533333rem;
@@ -41,12 +67,46 @@ html {
 }
 .b-lunbo {
     height: 1.2rem;
+    box-sizing: border-box;
 }
 .b-lunbo .swiper-slide {
     width: 7.733333rem;
     height: 1.2rem;
-    background-color: yellow;
 }
+.random-shop {
+    display: flex;
+    /*background-color: #0f0;*/
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0.067rem;
+}
+.shop-img {
+    width: 0.853rem;
+    height: 0.853rem;
+}
+.shop-info {
+    display: flex;
+    padding-left: 0.267rem;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.shop-title {
+    font-size: 30px
+    font-weight: 700;
+}
+html[data-dpr="1"] .shop-title {
+    font-size: 15px;
+}
+html[data-dpr="3"] .shop-title {
+    font-size: 45px;
+}
+.shop-text {
+    margin: 0;
+    color: #666;
+}
+
 /*---------------------申请人数----------------------*/
 .people {
   height: 4.08rem;
