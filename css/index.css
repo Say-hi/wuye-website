@@ -482,3 +482,103 @@ z-index: 999;
     right: 0;
 }
 /*---------------------user个人中心样式------------e*/
+
+/*---------------------choose-popup样式------------s*/
+.choose.go-to-top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+    /*margin-bottom: 1rem;*/
+    height: 1rem;
+    line-height: 1rem;
+    padding-top: 0;
+    background-color: #fff;
+}
+.choose-popup {
+    display: none;
+}
+.choose-popup.show {
+    display: block;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+.choose.go-to-top .c-t-li {
+    height: 1rem;
+    line-height: 1rem;
+}
+.choose-tab-list {
+    margin: 1rem 0;
+}
+.c-t-l-ul {
+    padding: 0;
+    margin-top: 0.133rem;
+}
+.c-t-l {
+    display: none;
+    padding: 0.267rem;
+}
+.c-t-l.active {
+    display: block;
+}
+.c-t-l-title {   
+    font-size: 0.4rem;
+}
+.c-t-l-li {
+    display: inline-block;
+    width: 32.3%;
+    background-color: #F5F5F5;
+    border: 0.013rem solid #ddd;
+    border-radius: 0.04rem;
+    text-align: center;
+    line-height: 1rem;
+    margin-top: 0.133rem;
+}
+.c-t-l-li.active {
+    color: #0079d7;
+    border-color: #0079d7;
+}
+.btn {
+    width: 100%;
+    border-top: 0.013rem solid #eee;
+    height: 1rem;
+    /*background-color: #f00;*/
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    border-top: 0.013rem solid #eee;
+}
+.btn-cancel, .btn-confirm {
+    flex: 1;
+    text-align: center;
+    line-height: 1rem;
+    height: 100%;
+    background-color: #fff;
+}
+.btn-confirm {
+    background-color: #0079d7;
+    color: #fff;
+}
+/*---------------------choose-popup样式------------e*/
+
+/*----------------mask遮罩---------------------s*/
+.mask {
+    display: none;
+}
+.mask.show {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1000;
+}
+
+/*----------------mask遮罩---------------------e*/

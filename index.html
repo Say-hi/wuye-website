@@ -215,12 +215,65 @@
         <div class="choose">
             <div class="choose-tab">
                 <ul class="c-t-ul">
-                    <li class="c-t-li triangle active">综合排序</li>
-                    <li class="c-t-li triangle">排序筛选</li>
-                    <li class="c-t-li triangle">贷款类型</li>
-                    <li class="c-t-li triangle">金额选择</li>
+                    <li data-tab='tab0' class="c-t-li triangle active">综合排序</li>
+                    <li data-tab='tab1' class="c-t-li triangle">排序筛选</li>
+                    <li data-tab='tab2' class="c-t-li triangle">贷款类型</li>
+                    <li data-tab='tab3' class="c-t-li triangle">金额选择</li>
                 </ul>
             </div>
+        </div>
+        <!-- 借款机构弹出层 -->
+        <div class="choose-popup">
+            <!-- 选项栏 -->
+            
+            <!-- 选项栏子列表 -->
+            <div class="choose-tab-list">
+                <!-- 综合排序 -->
+                <div data-list='choose0' class="c-t-l active">
+                    <span class="c-t-l-title">综合排序</span>
+                </div>
+                <!-- 排序筛选 -->
+                <div data-list='choose1' class="c-t-l">
+                    <span class="c-t-l-title">排序筛选</span>
+                    <ul class="c-t-l-ul">
+                        <li class="c-t-l-li">额度最高</li>
+                        <li class="c-t-l-li">门槛最低</li>
+                        <li class="c-t-l-li">利息最低</li>
+                    </ul>
+                </div>
+                <!-- 贷款类型 -->
+                <div data-list='choose2' class="c-t-l">
+                    <span class="c-t-l-title">贷款类型</span>
+                    <ul class="c-t-l-ul">
+                        <li class="c-t-l-li">工薪贷</li>
+                        <li class="c-t-l-li">学生贷</li>
+                        <li class="c-t-l-li">企业主贷</li>
+                        <li class="c-t-l-li">淘宝用户贷</li>
+                        <li class="c-t-l-li">小额急速贷</li>
+                        <li class="c-t-l-li">信用卡代还</li>
+                        <li class="c-t-l-li">抵押贷款</li>
+                    </ul>
+                </div>
+                <!-- 金额选择 -->
+                <div data-list='choose3' class="c-t-l">
+                    <span class="c-t-l-title">金额选择</span>
+                    <ul class="c-t-l-ul">
+                        <li class="c-t-l-li">金额不限</li>
+                        <li class="c-t-l-li">2000元以下</li>
+                        <li class="c-t-l-li">2000-5000</li>
+                        <li class="c-t-l-li">5000-10000</li>
+                        <li class="c-t-l-li">10000以上</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="btn-cancel">重置</div>
+                <div class="btn-confirm">确定</div>
+            </div>
+        </div>
+        <!-- mask遮罩层 -->
+        <div class="mask">
+            
         </div>
         <!-- choose-list -->
         <div class="hot-list clearfix choose-list">
